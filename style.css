@@ -1,0 +1,124 @@
+body 
+{ 
+	background-image: url("background.png");
+	background-size: 120%;
+	margin:0px; 
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-family: "Courier";
+}
+/*creates toolbar*/
+ul
+{
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+	position: fixed;
+	width: 100%;
+}
+
+li 
+{
+    float: left;
+}
+/*sets the settings for each block in the toolbar*/
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+/*makes color black if the cursor is hovering over it*/
+li a:hover:not(.active) 
+{
+    background-color: #111;
+}
+/*makes color green if it is selected*/
+.active 
+{
+    background-color: #4CAF50;
+}
+/*creates columns*/
+.column
+{
+	display: table-cell;
+    padding: 16px;
+	vertical-align: top;
+}
+
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*settings for the horizontal lines*/
+hr 
+{ 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/*settings for the alaska picture/text*/
+div.absolute.alaska
+{
+	position: absolute;
+    top: 280px;
+    right: 393px;
+}
+
+div.absolute.alaskatext
+{
+	position: absolute;
+    top: 700px;
+    right: 393px;
+	text-align: center;
+	width: 533;
+}
+/*settings for the matrix picture/text*/
+div.absolute.matrix
+{
+	position: absolute;
+    top: 820px;
+    right: 393px;
+}
+
+div.absolute.matrixtext
+{
+	position: absolute;
+    top: 1256px;
+    right: 393px;
+	text-align: center;
+	width: 533;
+}
+/*settings for the quark picture/text*/
+div.absolute.quark
+{
+	position: absolute;
+    top: 1420px;
+    right: 393px;
+}
+
+div.absolute.quarktext
+{
+	position: absolute;
+    top: 1840px;
+    right: 393px;
+	text-align: center;
+	width: 533;
+}
+/*centers pictures*/
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
